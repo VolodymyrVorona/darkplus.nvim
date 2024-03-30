@@ -156,6 +156,8 @@ theme.set_highlights = function()
   hl(0, "@keyword.coroutine", { link = 'Include' })
   hl(0, "@keyword.conditional", { link = 'Conditional' })
   hl(0, "@keyword.import", { link = 'Include' })
+  hl(0, "@keyword.export", { fg = c.purple, bg = 'NONE' })
+  hl(0, "@keyword.default", { fg = c.purple, bg = 'NONE' })
   hl(0, "@conditional", { link = 'Conditional' })
   hl(0, "@repeat", { link = 'Repeat' })
   hl(0, "@debug", { link = 'Debug' })
@@ -473,6 +475,8 @@ theme.set_highlights = function()
   hl(0, "@lsp.type.namespace.typescriptreact", { fg = c.cyan, bg = 'NONE' })
   hl(0, "@lsp.typemod.variable.readonly.typescriptreact", { fg = c.blue_3, bg = 'NONE' })
   hl(0, "@tag.builtin.tsx", { link = 'Tag' })
+  hl(0, "@constructor.typescript", { link = 'Keyword'})
+  hl(0, "@keyword.as.typescript", { link = 'Include'})
 
 
   hl(0, "typescriptArrowFuncArg", { fg = c.fg, bg = 'NONE' })
@@ -482,6 +486,11 @@ theme.set_highlights = function()
 
   hl(0, "@tag.tsx", { fg = c.cyan, bg = 'NONE' })
   hl(0, "@tag.jsx", { fg = c.cyan, bg = 'NONE' })
+
+  -- javascript
+  hl(0, "@constructor.javascript", { link = 'Keyword'})
+  hl(0, "@variable.builtin.this", { link = 'Keyword'})
+  hl(0, "@number.infinity", { link = 'Keyword'})
 
   -- CSS
   hl(0, "@string.special.css", { fg = c.dark_yellow, bg = 'NONE' })
